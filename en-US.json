@@ -44,6 +44,17 @@
                       "{fizzOrBuzz}",
                       "{number}"
                   ]
+              },
+              {
+                  "name": "RepeatIntent",
+                  "slots": [],
+                  "samples": [
+                      "repeat it again",
+                      "say again",
+                      "again",
+                      "say it again",
+                      "repeat"
+                  ]
               }
           ],
           "types": [
