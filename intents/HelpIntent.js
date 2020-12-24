@@ -1,6 +1,6 @@
 const { HELP_STRING } = require('../utils/FunctionsAndStrings');
 
-// Help intent reiterates instructions and reminds user where they are in the game
+// Help reiterates instructions
 exports.HelpIntentHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'

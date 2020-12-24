@@ -1,6 +1,6 @@
 const { correctAnswer, LOSS_STRINGS } = require('../utils/FunctionsAndStrings');
 
-// Error handling - guaranteed wrong answer
+// Error handling (guaranteed wrong answer/gibberish)
 exports.ErrorHandler = {
   canHandle() {
     return true;

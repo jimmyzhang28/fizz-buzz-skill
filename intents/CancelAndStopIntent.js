@@ -1,6 +1,6 @@
 const { EXIT_STRING } = require('../utils/FunctionsAndStrings');
 
-// Stops the game
+// Stops the game on 'stop' or 'cancel'
 exports.CancelAndStopIntentHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
