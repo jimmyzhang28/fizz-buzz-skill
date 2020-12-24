@@ -1,5 +1,13 @@
 const Alexa = require('ask-sdk-core');
+const { LaunchRequestHandler } = require('./intents/LaunchRequest');
+const { FizzBuzzIntentHandler } = require('./intents/FizzBuzzIntent');
+const { RepeatIntentHandler } = require('./intents/RepeatIntent');
+const { HelpIntentHandler } = require('./intents/HelpIntent');
+const { CancelAndStopIntentHandler } = require('./intents/CancelAndStopIntent');
+const { SessionEndedRequestHandler } = require('./intents/SessionEndedRequest');
+const { ErrorHandler } = require('./intents/ErrorHandling');
 
+/*
 // Initial launch message upon "Alexa, open fizz buzz game"
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
@@ -145,6 +153,7 @@ const ErrorHandler = {
       .getResponse();
   },
 };
+*/
 
 // Exporting to AWS lambda function
 exports.handler = Alexa.SkillBuilders.custom()
